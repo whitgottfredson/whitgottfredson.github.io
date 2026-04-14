@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adventures | Air Whittaker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<div id="top-nav">
+  <a href="index.html" class="brand">Air Whittaker</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Résumé</a>
+    <a href="scratch.html">Adventures</a>
+    <a href="app.html">Logbook App</a>
+  </div>
+</div>
+
+<!-- HERO — uses background-image set inline so it works with the CSS background-color fallback -->
+<div id="hero" style="background-image: linear-gradient(to bottom, rgba(6,14,28,0.45) 0%, rgba(11,26,46,0.88) 100%), url('flying-aerial.jpeg'); background-size: cover; background-position: center;">
+  <div id="hero-content">
+    <div style="font-family:'Oswald',sans-serif; font-size:0.78rem; letter-spacing:5px; text-transform:uppercase; color:#c9a84c; margin-bottom:14px;">Student Pilot · Licensed Skydiver</div>
+    <h1>Life at<br><span class="gold">Altitude</span></h1>
+    <p class="tagline">"The sky is not the limit — it's the beginning."</p>
+    <a href="#flying" class="btn-scratch">Flying</a>
+    <a href="#skydiving" class="btn-outline-scratch">Skydiving</a>
+  </div>
+</div>
+
+<!-- FLYING SECTION -->
+<div id="flying-section">
+  <a id="flying"></a><!-- on-page anchor -->
+  <div class="section-eyebrow">Student Pilot</div>
+  <h2 class="section-heading">Learning to<br>Fly</h2>
+  <div class="gold-bar"></div>
+  <p class="body-text">
+    Over the past 5 months I've been training under Part 61 (private instruction) at a local flight school in Utah. 
+    I've logged more than 30 flight hours in a Cessna 172 — learning everything from basic maneuvers and navigation 
+    to emergency procedures and cross-country planning. On <strong style="color:#c9a84c;">February 27th, 2026</strong>, 
+    I flew solo for the first time in N2050E. Three takeoffs, three landings, completely alone in the aircraft. 
+    It's a moment I won't forget.
+  </p>
+
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-number">30+</div>
+      <div class="stat-label">Flight Hours</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">5</div>
+      <div class="stat-label">Months Training</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">Feb 27</div>
+      <div class="stat-label">Solo Date 2026</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">C172</div>
+      <div class="stat-label">Aircraft</div>
+    </div>
+  </div>
+
+  <div class="photo-row">
+    <img src="flying-aerial.jpeg" alt="Aerial view of Utah Valley from Cessna 172"/>
+    <img src="cockpit-selfie.jpeg" alt="In the cockpit with flight instructor"/>
+    <img src="first-solo.jpeg" alt="Whit next to Cessna N2050E after first solo flight"/>
+  </div>
+
+  <!-- YouTube Flying Video — REPLACE VIDEO_ID_HERE with your actual YouTube video ID -->
+  <div style="margin-top:48px;">
+    <div class="section-eyebrow">Watch</div>
+    <h3 style="font-family:'Oswald',sans-serif; font-size:1.6rem; font-weight:700; color:#fff; text-transform:uppercase; margin-bottom:16px;">Flying Footage</h3>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/X_-zrsSr_b0"
+        title="Piloting a Cessna 172 over Utah"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="color:#3a5a7c; font-size:0.8rem; font-family:'Georgia',serif; margin-top:10px; font-style:italic;">
+      (If the video doesn't load, <a href="https://www.youtube.com/watch?v=X_-zrsSr_b0" target="_blank" style="color:#c9a84c;">watch it on YouTube</a>.)
+    </p>
+  </div>
+</div>
+
+<!-- SKYDIVING SECTION -->
+<div id="skydiving-section">
+  <a id="skydiving"></a><!-- on-page anchor -->
+  <div id="skydiving-inner">
+    <div class="section-eyebrow">USPA A-License Holder</div>
+    <h2 class="section-heading">Jumping Out of<br>Airplanes</h2>
+    <div class="gold-bar"></div>
+    <p class="body-text">
+      I hold a USPA A-License, earned after completing 25 jumps, all 8 levels of AFF (Accelerated Freefall) training, 
+      extensive ground school, and a parachute packing certification course with accompanying USPA quizzes. 
+      From the first terrifying exit at 14,000 feet to confidently pulling my own pilot chute — 
+      skydiving has fundamentally changed how I think about risk, decision-making, and being present.
+    </p>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-number">25</div>
+        <div class="stat-label">Total Jumps</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">8</div>
+        <div class="stat-label">AFF Levels</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">14k</div>
+        <div class="stat-label">Exit Altitude (ft)</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">A</div>
+        <div class="stat-label">USPA License</div>
+      </div>
+    </div>
+
+    <!-- YouTube Skydiving Video — REPLACE SKYDIVE_VIDEO_ID with your actual YouTube video ID -->
+    <div style="margin-top:40px;">
+      <div class="section-eyebrow">Watch</div>
+      <h3 style="font-family:'Oswald',sans-serif; font-size:1.6rem; font-weight:700; color:#fff; text-transform:uppercase; margin-bottom:16px;">Skydive Footage</h3>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/0ESNOzSBURw?start=71&end=81"
+          title="Skydiving — USPA A-License Training"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p style="color:#3a5a7c; font-size:0.8rem; font-family:'Georgia',serif; margin-top:10px; font-style:italic;">
+        (If the video doesn't load, <a href="https://www.youtube.com/watch?v=0ESNOzSBURw&t=71" target="_blank" style="color:#c9a84c;">watch it on YouTube</a>.)
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MILESTONES — nested list section -->
+<div id="milestones-section">
+  <a id="milestones"></a><!-- on-page anchor -->
+  <div class="section-eyebrow">The Journey</div>
+  <h2 class="section-heading">Key Milestones</h2>
+  <div class="gold-bar"></div>
+  <p class="body-text" style="margin-bottom:32px;">
+    Both disciplines demand the same things: preparation, precision, and the willingness to commit. Here's a look at the major checkpoints along the way.
+  </p>
+
+  <!-- REQUIRED: Ordered list containing unordered lists -->
+  <ol class="outer-list">
+    <li>
+      Flying Milestones
+      <ul class="inner-list">
+        <li>First flight lesson — October 2025</li>
+        <li>Completed first solo ground training and pre-solo written exam</li>
+        <li>Logged 10 hours of dual instruction (student + instructor)</li>
+        <li>First solo flight in Cessna 172 N2050E — February 27, 2026</li>
+        <li>30+ total flight hours logged under Part 61</li>
+        <li>Working toward Private Pilot Certificate</li>
+      </ul>
+    </li>
+    <li>
+      Skydiving Milestones
+      <ul class="inner-list">
+        <li>Ground school and harness training completed</li>
+        <li>AFF Level 1 — first tandem-style freefall with two instructors</li>
+        <li>AFF Levels 2–4 — solo exits with instructor oversight</li>
+        <li>AFF Levels 5–8 — advanced maneuvers, turns, and dock jumps</li>
+        <li>Parachute packing course and USPA certification quiz passed</li>
+        <li>Jump 25 — USPA A-License earned</li>
+      </ul>
+    </li>
+    <li>
+      What I've Learned
+      <ul class="inner-list">
+        <li>Both disciplines require mental discipline more than physical skill</li>
+        <li>Checklists and procedures exist for a reason — discipline saves lives</li>
+        <li>Fear is information, not a stop sign</li>
+        <li>The debrief is where real learning happens</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+<!-- TABLEAU SECTION -->
+<div id="tableau-section">
+  <div id="tableau-inner">
+    <div class="section-eyebrow">Data Visualization</div>
+    <h2 class="section-heading" style="color:#fff;">Cessna Flying<br>Data</h2>
+    <div class="gold-bar" style="margin: 0 auto 28px;"></div>
+    <p class="body-text" style="margin: 0 auto 36px; text-align:center;">
+      Explore this Tableau dashboard visualizing Cessna flight data — the same aircraft I train in as a student pilot.
+    </p>
+    <!-- Tableau Public embed — Whit's own Cessna flying data -->
+    <div class='tableauPlaceholder' id='viz1776201844486' style='position: relative; max-width:100%; overflow:hidden;'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 1' src='https://public.tableau.com/static/images/My/MyCessnaFlying/Dashboard1/1_rss.png' style='border: none'/>
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+        <param name='embed_code_version' value='3'/>
+        <param name='site_root' value=''/>
+        <param name='name' value='MyCessnaFlying&#47;Dashboard1'/>
+        <param name='tabs' value='no'/>
+        <param name='toolbar' value='yes'/>
+        <param name='static_image' value='https://public.tableau.com/static/images/My/MyCessnaFlying/Dashboard1/1.png'/>
+        <param name='animate_transition' value='yes'/>
+        <param name='display_static_image' value='yes'/>
+        <param name='display_spinner' value='yes'/>
+        <param name='display_overlay' value='yes'/>
+        <param name='display_count' value='yes'/>
+        <param name='language' value='en-US'/>
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1776201844486');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width='1500px'; vizElement.style.height='1227px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width='1500px'; vizElement.style.height='1227px';
+      } else {
+        vizElement.style.width='100%'; vizElement.style.height='2177px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div id="scratch-footer">
+  <div class="footer-brand">AIR WHITTAKER</div>
+  <div class="footer-links" style="margin-bottom:12px;">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Résumé</a>
+    <a href="scratch.html">Adventures</a>
+    <a href="app.html">Logbook App</a>
+  </div>
+  <div class="copyright">© 2026 Whit Gottfredson · Air Whittaker</div>
+</div>
+
+</body>
+</html>

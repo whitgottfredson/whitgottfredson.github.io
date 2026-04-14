@@ -1,0 +1,367 @@
+/* ============================================
+   Air Whittaker — scratch.css
+   Custom stylesheet for Adventures page
+   ============================================ */
+
+/* --- ROOT & BODY --- */
+body {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  background-color: #0b1a2e;
+  color: #ddeeff;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- NAVIGATION --- */
+#top-nav {
+  background-color: #060e1c;
+  border-bottom: 2px solid #c9a84c;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#top-nav .brand {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c9a84c;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#top-nav .nav-links a {
+  color: #ddeeff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+#top-nav .nav-links a:hover {
+  color: #c9a84c;
+}
+
+/* --- HERO SECTION --- */
+#hero {
+  background-color: #0d2040;
+  background-image: linear-gradient(to bottom, rgba(6,14,28,0.55) 0%, rgba(11,26,46,0.85) 100%);
+  background-size: cover;
+  background-position: center;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+#hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+#hero h1 {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+#hero h1 .gold {
+  color: #c9a84c;
+}
+
+#hero .tagline {
+  font-size: 1.1rem;
+  color: #8baab8;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+/* --- BUTTONS --- */
+.btn-scratch {
+  display: inline-block;
+  background-color: #c9a84c;
+  color: #0b1a2e;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 6px;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-scratch:hover {
+  background-color: #e0bf6b;
+  transform: translateY(-2px);
+}
+
+.btn-outline-scratch {
+  display: inline-block;
+  background-color: transparent;
+  color: #c9a84c;
+  border: 2px solid #c9a84c;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline-scratch:hover {
+  background-color: #c9a84c;
+  color: #0b1a2e;
+}
+
+/* --- SECTION CONTAINERS (DIVS) --- */
+#flying-section {
+  background-color: #0b1a2e;
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#skydiving-section {
+  background-color: #060e1c;
+  padding: 80px 40px;
+}
+
+#skydiving-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#tableau-section {
+  background-color: #0d2040;
+  padding: 80px 40px;
+  text-align: center;
+  border-top: 1px solid rgba(201,168,76,0.2);
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+
+#tableau-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#milestones-section {
+  background-color: #0b1a2e;
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- SECTION LABELS --- */
+.section-eyebrow {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.gold-bar {
+  width: 48px;
+  height: 3px;
+  background-color: #c9a84c;
+  margin: 0 0 28px 0;
+}
+
+.body-text {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #8baab8;
+  line-height: 1.85;
+  max-width: 620px;
+}
+
+/* --- PHOTO GRID --- */
+.photo-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.photo-row img {
+  flex: 1 1 260px;
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(201,168,76,0.2);
+  transition: transform 0.3s;
+}
+
+.photo-row img:hover {
+  transform: scale(1.02);
+}
+
+/* --- VIDEO EMBED --- */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(201,168,76,0.25);
+  margin-top: 32px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+/* --- MILESTONE LIST (nested lists) --- */
+.milestone-category {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ddeeff;
+  margin-bottom: 8px;
+}
+
+ol.outer-list {
+  color: #c9a84c;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding-left: 1.4rem;
+  line-height: 2.2;
+}
+
+ul.inner-list {
+  color: #8baab8;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-left: 1.4rem;
+  line-height: 1.8;
+  list-style-type: disc;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+ul.inner-list li::marker {
+  color: #c9a84c;
+}
+
+/* --- STATS ROW --- */
+.stats-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 32px 0;
+}
+
+.stat-box {
+  background-color: #1a3a5c;
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 3px;
+  padding: 24px 32px;
+  text-align: center;
+  flex: 1 1 140px;
+}
+
+.stat-number {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c9a84c;
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8baab8;
+  margin-top: 6px;
+}
+
+/* --- FOOTER --- */
+#scratch-footer {
+  background-color: #060e1c;
+  border-top: 1px solid rgba(201,168,76,0.2);
+  padding: 40px 32px;
+  text-align: center;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+}
+
+#scratch-footer .footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c9a84c;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+#scratch-footer .footer-links a {
+  color: #8baab8;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+#scratch-footer .footer-links a:hover {
+  color: #c9a84c;
+}
+
+#scratch-footer .copyright {
+  color: #3a5a7c;
+  font-size: 0.78rem;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+}

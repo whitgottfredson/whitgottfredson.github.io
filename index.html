@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whit Gottfredson | Air Whittaker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
+  <style>
+    :root {
+      --sky: #0a1628;
+      --horizon: #1a3a5c;
+      --gold: #c9a84c;
+      --light: #e8f4f8;
+      --muted: #8baab8;
+    }
+    body { font-family: 'Barlow', sans-serif; background: var(--sky); color: var(--light); margin: 0; }
+
+    /* NAVBAR */
+    .navbar { background: rgba(10,22,40,0.97); border-bottom: 1px solid rgba(201,168,76,0.3); }
+    .navbar-brand { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.6rem; color: var(--gold) !important; letter-spacing: 2px; }
+    .nav-link { color: var(--light) !important; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+    .nav-link:hover { color: var(--gold) !important; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, rgba(10,22,40,0.3) 0%, rgba(10,22,40,0.7) 60%, var(--sky) 100%),
+                  url('flying-aerial.jpeg') center center / cover no-repeat;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      padding: 120px 20px 80px;
+    }
+    .hero-tag { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-size: 0.85rem; margin-bottom: 16px; }
+    .hero h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(3.5rem, 8vw, 7rem); line-height: 0.95; text-transform: uppercase; letter-spacing: -1px; margin-bottom: 24px; }
+    .hero h1 span { color: var(--gold); }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 520px; margin: 0 auto 36px; font-weight: 300; }
+    .btn-gold { background: var(--gold); color: var(--sky); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 12px 32px; border: none; border-radius: 2px; font-size: 1rem; transition: all 0.2s; }
+    .btn-gold:hover { background: #e0bf6b; color: var(--sky); transform: translateY(-2px); }
+    .btn-outline-gold { border: 1px solid var(--gold); color: var(--gold); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 12px 32px; background: transparent; border-radius: 2px; font-size: 1rem; transition: all 0.2s; }
+    .btn-outline-gold:hover { background: var(--gold); color: var(--sky); }
+
+    /* STATS BAR */
+    .stats-bar { background: var(--horizon); border-top: 1px solid rgba(201,168,76,0.2); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 32px 0; }
+    .stat-item { text-align: center; }
+    .stat-number { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 2.8rem; color: var(--gold); line-height: 1; }
+    .stat-label { font-family: 'Barlow Condensed', sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); font-size: 0.75rem; margin-top: 4px; }
+
+    /* SECTIONS */
+    section { padding: 90px 0; }
+    .section-tag { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-size: 0.8rem; margin-bottom: 12px; }
+    .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; line-height: 1; margin-bottom: 40px; }
+    .divider { width: 48px; height: 3px; background: var(--gold); margin: 16px 0 32px; }
+
+    /* ABOUT */
+    .about-section { background: var(--sky); }
+    .about-img { width: 100%; border-radius: 4px; object-fit: cover; height: 420px; border: 1px solid rgba(201,168,76,0.2); }
+
+    /* CARD */
+    .card-dark { background: var(--horizon); border: 1px solid rgba(201,168,76,0.15); border-radius: 4px; padding: 32px; height: 100%; transition: border-color 0.2s, transform 0.2s; }
+    .card-dark:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .card-icon { font-size: 2rem; color: var(--gold); margin-bottom: 16px; }
+    .card-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+
+    /* PHOTO GRID */
+    .photo-grid img { width: 100%; height: 280px; object-fit: cover; border-radius: 4px; border: 1px solid rgba(201,168,76,0.15); transition: transform 0.3s; }
+    .photo-grid img:hover { transform: scale(1.02); }
+
+    /* FOOTER */
+    footer { background: #060f1e; border-top: 1px solid rgba(201,168,76,0.2); padding: 48px 0 32px; }
+    .footer-brand { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.8rem; color: var(--gold); letter-spacing: 2px; }
+    .social-link { color: var(--muted); font-size: 1.4rem; margin: 0 10px; transition: color 0.2s; text-decoration: none; }
+    .social-link:hover { color: var(--gold); }
+    .footer-link { color: var(--muted); text-decoration: none; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; margin: 0 12px; }
+    .footer-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AIR WHITTAKER</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+        <li class="nav-item"><a class="nav-link" href="scratch.html">Adventures</a></li>
+        <li class="nav-item"><a class="nav-link" href="app.html">Logbook App</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-tag">Pilot · Skydiver · Marketer</div>
+    <h1>Whit<br><span>Gottfredson</span></h1>
+    <p>BYU Pre-Business student, aspiring marketer, and someone who prefers to experience the world from altitude.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="resume.html" class="btn btn-gold">View Résumé</a>
+      <a href="scratch.html" class="btn btn-outline-gold">My Adventures</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number">30+</div>
+        <div class="stat-label">Flight Hours</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number">25</div>
+        <div class="stat-label">Skydives</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number">250+</div>
+        <div class="stat-label">Solar Leads Generated</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-number">3.52</div>
+        <div class="stat-label">GPA at BYU</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <img src="first-solo.jpeg" alt="Whit next to Cessna N2050E after first solo" class="about-img"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Built for<br>the Sky</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted); font-size:1.05rem; line-height:1.8;">I'm Whit Gottfredson — a Pre-Business student at Brigham Young University with an emphasis in Marketing. When I'm not studying or generating solar leads at Sunrun, I'm logging flight hours in a Cessna 172 or jumping out of perfectly good airplanes.</p>
+        <p style="color:var(--muted); font-size:1.05rem; line-height:1.8;">On February 27th, 2026, I flew solo for the first time. On the ground, I hold a USPA A-License after completing 25 jumps and all 8 levels of AFF training. Both pursuits have sharpened the same skills I bring to my professional life: calm under pressure, precise execution, and a bias toward action.</p>
+        <div class="d-flex gap-3 mt-4 flex-wrap">
+          <a href="resume.html" class="btn btn-gold">My Résumé</a>
+          <a href="scratch.html" class="btn btn-outline-gold">Adventures Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section style="background: #060f1e;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag">What I Do</div>
+      <h2 class="section-title">Three Worlds,<br>One Focus</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-dark">
+          <div class="card-icon"><i class="bi bi-airplane"></i></div>
+          <div class="card-title">Student Pilot</div>
+          <p style="color:var(--muted); font-size:0.95rem;">Training under Part 61 with 30+ logged hours. Flew solo in a Cessna 172 (N2050E) on Feb 27, 2026. Working toward my Private Pilot Certificate.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-dark">
+          <div class="card-icon"><i class="bi bi-wind"></i></div>
+          <div class="card-title">Licensed Skydiver</div>
+          <p style="color:var(--muted); font-size:0.95rem;">USPA A-License holder. Completed 25 jumps, all 8 AFF levels, ground training, and parachute packing certification. Freefall is the best reset button I know.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-dark">
+          <div class="card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="card-title">Sales & Marketing</div>
+          <p style="color:var(--muted); font-size:0.95rem;">SDR at Sunrun generating 250+ qualified leads. Selected as mentee to the President of BYU Marketing Association. Pursuing a Marketing degree at BYU.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GRID -->
+<section style="background: var(--sky);">
+  <div class="container">
+    <div class="section-tag">Gallery</div>
+    <h2 class="section-title">Life at<br>Altitude</h2>
+    <div class="divider"></div>
+    <div class="row g-3 photo-grid">
+      <div class="col-md-4">
+        <img src="flying-aerial.jpeg" alt="Aerial view over Utah Valley from Cessna"/>
+      </div>
+      <div class="col-md-4">
+        <img src="cockpit-selfie.jpeg" alt="Cockpit selfie with flight instructor"/>
+      </div>
+      <div class="col-md-4">
+        <img src="first-solo.jpeg" alt="First solo flight next to Cessna N2050E"/>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="scratch.html" class="btn btn-outline-gold">See Full Adventures Page</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container text-center">
+    <div class="footer-brand mb-3">AIR WHITTAKER</div>
+    <div class="mb-3">
+      <a href="https://www.linkedin.com/in/whitgottfredson" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/whitgottfredson" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
+      <a href="mailto:whitgottfredson@gmail.com" class="social-link"><i class="bi bi-envelope"></i></a>
+    </div>
+    <div class="mb-4">
+      <a href="index.html" class="footer-link">Home</a>
+      <a href="resume.html" class="footer-link">Résumé</a>
+      <a href="scratch.html" class="footer-link">Adventures</a>
+      <a href="app.html" class="footer-link">Logbook</a>
+    </div>
+    <p style="color:var(--muted); font-size:0.8rem;">© 2026 Whit Gottfredson · Air Whittaker</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
